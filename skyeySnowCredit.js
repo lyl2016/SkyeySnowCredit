@@ -1,6 +1,7 @@
 // ==UserScript==
 // @name         天雪积分易读转换
 // @supportURL   https://github.com/lyl2016/SkyeySnowCredit/
+// @homepageURL  https://github.com/lyl2016/SkyeySnowCredit/
 // @namespace    http://tampermonkey.net/
 // @version      1.0.0
 // @description  天雪积分自动除1073741824方便识读
