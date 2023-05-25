@@ -3,7 +3,7 @@
 // @supportURL   https://github.com/lyl2016/SkyeySnowCredit/
 // @homepageURL  https://github.com/lyl2016/SkyeySnowCredit/
 // @namespace    http://tampermonkey.net/
-// @version      1.0.0
+// @version      1.0.1
 // @description  天雪积分自动除1073741824方便识读
 // @author       Nimaime
 // @match        https://skyeysnow.com/home.php?mod=spacecp&ac=credit*
@@ -20,5 +20,9 @@
         if (creditBar.children[i].nodeName != "LI") continue;
         var point = Number(creditBar.children[i].childNodes[1].data) / 1073741824;
         creditBar.children[i].childNodes[1].data = point + " ";
+    }
+    var exchange = document.getElementById("exchangedesamount");
+    if (exchange != undefined) {
+        exchange.style.width = "120px";
     }
 })();
